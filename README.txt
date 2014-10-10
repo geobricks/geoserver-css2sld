@@ -2,13 +2,12 @@
 INSTALLING THE CSS2SLD Servlet
 -------------------------------
 
-
-1) create under geoserver WEB-INF folder:
+1) import CSS modules on geoserver lib folder
+2) create under geoserver WEB-INF folder:
 
     tomcat_geoserver/webapps/geoserver/WEB-INF/classes/org/fao/fenix/
 
-2) copy the CSS2SLDServlet to the folder
-3) rename it to CSS2SLDServlet.java
+3) copy the CSS2SLDServlet.java to the folder
 4) copy the servlet-api.jar to (servlet-api is the jar used by tomcat in tomcat/lib)
 
     tomcat_geoserver/webapps/geoserver/WEB-INF/lib
