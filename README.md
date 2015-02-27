@@ -54,7 +54,7 @@ The service is now accessible through a POST request at the following URL http:/
 }
 ```
 
-Returns a URL $CSS2SLDURL/uuid.sld
+Returns a URL $CSS2SLDURL/UUID.sld
 
 
 
