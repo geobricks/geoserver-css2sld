@@ -1,5 +1,5 @@
 
-INSTALLING THE CSS2SLD Servlet
+Install
 -------------------------------
 
 1) Install CSS modules on GeoServer lib folder
