@@ -49,8 +49,8 @@ The service is now accessible through a POST request at the following URL http:/
 ```json
 
 {
-    style: "* {mark: symbol(circle);}",
-    stylename: "workspace:layername" (optional and to be used in conjunction with the WMS parameter "SLD")
+    "style": "* {mark: symbol(circle);}",
+    "stylename": "workspace:layername (optional and to be used in conjunction with the WMS parameter 'SLD')" 
 }
 ```
 
