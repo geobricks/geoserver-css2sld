@@ -34,10 +34,6 @@ public class CSS2SLDServlet extends HttpServlet {
         sldHeader +="<sld:NamedLayer>";
         String sldFooter = "</sld:NamedLayer></sld:StyledLayerDescriptor>";
 
-			/*for(String key: parameters.keySet()) {
-				System.out.println(key + " - " + parameters.get(key));
-			}*/
-
         try {
             stylename = parameters.get("stylename")[0];
         }catch(Exception e) { System.out.println("error: " + e.getMessage()); }
@@ -55,12 +51,8 @@ public class CSS2SLDServlet extends HttpServlet {
         try {
             SLDTransformer transformer = new SLDTransformer();
             transformer.setIndentation(0);
-            //transformer.setIndentation(4);
-            // to transform directly into a file instead of a string
-            //transformer.transform(style,new FileOutputStream("/home/vortex/Desktop/junk.eraseme"));
             output = transformer.transform(style);
         }catch(Exception e) { System.out.println("error: " + e.getMessage()); }
-
 
         //  modify SLD/XML result
         if ( isSLD_BODY ) {
@@ -68,14 +60,12 @@ public class CSS2SLDServlet extends HttpServlet {
             sldHeader += "<sld:Name>" + stylename +"</sld:Name>";
             output = sldHeader + output + sldFooter;
         }
-
+        
         response.setContentLength(output.length());
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Access-Control-Allow-Origin", "*");
         PrintWriter out = response.getWriter();
         out.println(output);
-
-        // close stream
         out.close();
         out.flush();
     }
