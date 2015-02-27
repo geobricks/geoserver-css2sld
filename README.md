@@ -4,7 +4,7 @@ INSTALLING THE CSS2SLD Servlet
 
 1) Install CSS modules on GeoServer lib folder
 
-[Install CSS Module](http://docs.geoserver.org/latest/en/user/extensions/css/install.html)
+[Install GeoServer CSS Module](http://docs.geoserver.org/latest/en/user/extensions/css/install.html)
 
 2) Copy dist/org/fao/fenix/ on GeoServer WEB-INF/classes/ folder:
 
