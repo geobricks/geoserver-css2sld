@@ -6,11 +6,11 @@ INSTALLING THE CSS2SLD Servlet
 
 [Install CSS Module](http://docs.geoserver.org/latest/en/user/extensions/css/install.html)
 
-2) Copy dist/org/fao/fenix/ on GeoServer WEB-INF/ folder:
+2) Copy dist/org/fao/fenix/ on GeoServer WEB-INF/classes/ folder:
 
     $TOMCAT/webapps/geoserver/WEB-INF/classes/org/fao/fenix/
 
-3) Copy the dist/servlet-api.jar to WEB-INF/lib (servlet-api is the jar used by tomcat in tomcat/lib)
+3) Copy the dist/servlet-api.jar to WEB-INF/lib/ (servlet-api is the jar used by tomcat in tomcat/lib)
 
     $TOMCAT/webapps/geoserver/WEB-INF/lib
 
