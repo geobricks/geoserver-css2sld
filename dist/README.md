@@ -41,7 +41,7 @@ Install
     </context-param>
 ```
 
-USAGE
+Usage
 -----
 
 The service is now accessible through a POST request at the following URL http://localhost:8080/geoserver/CSS2SLD
